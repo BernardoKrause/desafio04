@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    background-color: #1A1924;
+    padding: 6.25% 14.4%;
+}
+
+.person-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person {
+    display: flex;
+    gap: 16px;
+}
+
+.person img {
+    border-radius: 50%;
+    width: 48px;
+}
+
+.status {
+    color: #00B37E;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.status img {
+    width: 8px;
+}
+
+.chat {
+    text-align: center;
+    margin-top: 14px;
+}
+
+.line {
+    display: flex;
+}
+
+.line-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.spacing {
+    width: 50%;
+}
+
+.cecilia-msg {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cecilia-msg p:nth-child(1) {
+    padding-block: 0 8px;
+}
+
+.received-msg {
+    background-color: #633BBC;
+    padding: 14px;
+    border-radius: 0 8px 8px 8px;
+}
+
+.my-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.my-msg p:nth-child(1) {
+    padding-block: 0 8px;
+}
+
+.sended-msg {
+    background-color: #07847E;
+    padding: 14px;
+    border-radius: 8px 0px 8px 8px;
+}
+
+.message-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    background-color: #282843;
+    border-radius: 999px;
+    border: none;
+    width: 100%;
+}
+
+.input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+  
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 30px;
+}
+
+.mt-2 {
+    margin-top: 48px;
+}
+
+.msg {
+    font-size: 12px;
+}
+
+/* animation */
+
+#cec1 {
+    animation: fromLeft .7s .2s backwards;
+}
+
+#cec2 {
+    animation: fromLeft .7s 1s backwards;
+}
+
+#my1 {
+    animation: fromRight .7s .6s backwards;
+}
+
+#my2 {
+    animation: fromRight .7s 1.4s backwards;
+}
+
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes fromRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
